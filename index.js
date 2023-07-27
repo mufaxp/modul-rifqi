@@ -4,8 +4,13 @@ const routes = require('./routes.js')
 const Inert = require('@hapi/inert')
 const init = async () => {
     const server = Hapi.server({
-        port: 1000,
+        port: 5000,
         host: '0.0.0.0',
+        routes: {
+            cors: {
+                origin: ['*'],
+            }
+        }
     });
 
     await server.register(Inert);
