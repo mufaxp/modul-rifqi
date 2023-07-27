@@ -4,13 +4,12 @@
   "description": "flipbook",
   "main": "index.js",
   "scripts": {
-    "start": "index.js"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hapi/hapi": "^21.3.2",
-    "@hapi/inert": "^7.1.0"
+    "@hapi/hapi": "^21.3.2"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
